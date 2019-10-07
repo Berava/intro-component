@@ -33,9 +33,9 @@ strong {
   background: url(../img/bg-intro-mobile.png);
   background-color: var(--clr-primary-red);
   background-size: cover;
-  height: 100vh;
+  height: 150vh;
   margin: 0 auto;
-  max-width: 375px;
+  max-width: 414px;
   padding: 0 2rem;
   text-align: center;
 }
@@ -58,7 +58,7 @@ strong {
 }
 
 .form-text {
-  all: unset;
+  font-size: inherit;
   border: 1px solid var(--clr-neutral-gray);
   border-radius: 5px;
   box-sizing: border-box;
@@ -99,9 +99,32 @@ strong {
   top: 5px;
 }
 
-.small-text {
+p.small-text {
   color: var(--clr-neutral-gray);
   margin-top: 1rem;
+}
+
+.form > div {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.invalid {
+  background: url(../img/icon-error.svg);
+  background-position: 95%;
+  background-repeat: no-repeat;
+  border: 1px solid var(--clr-primary-red);
+  color: var(--clr-primary-red);
+}
+
+.error-msg {
+  color: var(--clr-primary-red);
+  display: block;
+  margin: 0;
+  position: absolute;
+  text-align: right;
+  top: 3.75rem;
+  width: 100%;
 }
 
 /* Utility class */
@@ -135,4 +158,64 @@ strong {
 
 .shadow {
   box-shadow: 0 10px 0 -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 320px) {
+  .main {
+    height: 180vh;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .main {
+    height: 120vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main {
+    background: url(../img/bg-intro-desktop.png);
+    background-color: var(--clr-primary-red);
+    height: 100vh;
+    max-width: 1440px;
+  }
+
+  .title {
+    padding: 0 1rem;
+    text-align: left;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 1130px) {
+  .title {
+    padding: 0 5rem;
+    text-align: left;
+  }
+  .container {
+    padding: 0 3rem;
+  }
+
+  .sign-up-container {
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .form > div {
+    margin-bottom: 0;
+  }
+
+  .form-text {
+    margin: 1.5rem 0;
+  }
+
+  .form {
+    margin-bottom: 2rem;
+  }
+
+  .error-msg {
+    top: 5rem;
+  }
 }

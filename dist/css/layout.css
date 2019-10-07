@@ -9,3 +9,12 @@
   flex-direction: column;
   justify-content: center;
 }
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+}

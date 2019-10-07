@@ -24,17 +24,74 @@
           invaluable
         </p>
       </div>
-      <div>
+      <div class="container">
         <div class="offer shadow">
           <p><strong>Try it free 7 days</strong> then $20/mo.thereafter</p>
         </div>
         <div class="sign-up-container shadow">
-          <form class="form" action="#">
-            <input class="form-text" type="text" placeholder="First Name" />
-            <input class="form-text" type="text" placeholder="Last Name" />
-            <input class="form-text" type="email" placeholder="Email Address" />
-            <input class="form-text" type="password" placeholder="Password" />
-            <button class="button">claim your free trial</button>
+          <form class="form" action="#" novalidate>
+            <div>
+              <input
+                required
+                id="first-name"
+                class="form-text"
+                type="text"
+                placeholder="First Name"
+              />
+              <span
+                id="first-name-error"
+                class="error-msg small-text"
+                aria-live="polite"
+                data-msg="First Name cannot be empty"
+              ></span>
+            </div>
+            <div>
+              <input
+                required
+                id="last-name"
+                class="form-text"
+                type="text"
+                placeholder="Last Name"
+              />
+              <span
+                id="last-name-error"
+                class="error-msg small-text"
+                aria-live="polite"
+                data-msg="Last Name cannot be empty"
+              ></span>
+            </div>
+            <div>
+              <input
+                id="email"
+                class="form-text"
+                type="email"
+                placeholder="Email Address"
+              />
+              <span
+                id="email-error"
+                class="error-msg small-text"
+                aria-live="polite"
+                data-msg="Looks like this is not an email"
+              ></span>
+            </div>
+            <div>
+              <input
+                required
+                id="password"
+                class="form-text"
+                type="password"
+                placeholder="Password"
+              />
+              <span
+                id="last-name-error"
+                class="error-msg small-text"
+                aria-live="polite"
+                data-msg="Password cannot be empty"
+              ></span>
+            </div>
+            <button type="submit" class="button" id="button">
+              claim your free trial
+            </button>
             <p class="small-text">
               By clicking the button, you are agreeing to our
               <a href="#" class="fancy-link">Terms and Services</a>

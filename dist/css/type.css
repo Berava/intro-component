@@ -26,3 +26,15 @@ p {
 .small-text {
   font-size: var(--small-text);
 }
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  :root {
+    --type-scale: 1.333;
+  }
+}
+@media only screen and (min-width: 1130px) {
+  :root {
+    --type-scale: 1.5;
+  }
+}
