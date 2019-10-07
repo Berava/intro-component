@@ -32,11 +32,13 @@
           <form class="form" action="#" novalidate>
             <div>
               <input
-                required
+                required="required"
                 id="first-name"
                 class="form-text"
                 type="text"
                 placeholder="First Name"
+                aria-required="true"
+                name="firstname"
               />
               <span
                 id="first-name-error"
@@ -47,11 +49,13 @@
             </div>
             <div>
               <input
-                required
+                name="lastname"
+                required="required"
                 id="last-name"
                 class="form-text"
                 type="text"
                 placeholder="Last Name"
+                aria-required="true"
               />
               <span
                 id="last-name-error"
@@ -62,6 +66,7 @@
             </div>
             <div>
               <input
+                name="email"
                 id="email"
                 class="form-text"
                 type="email"
@@ -76,11 +81,13 @@
             </div>
             <div>
               <input
-                required
+                name="password"
+                required="required"
                 id="password"
                 class="form-text"
                 type="password"
                 placeholder="Password"
+                aria-required="true"
               />
               <span
                 id="password-error"
